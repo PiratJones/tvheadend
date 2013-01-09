@@ -1,5 +1,5 @@
 Tvheadend TV streaming server
-		    =============================
+=============================
 
 		 (c) 2006 - 2012 Andreas Öman, et al.
 
@@ -13,11 +13,12 @@ If you are using any Smartcard reader like the easymouse2 you could have problem
 with the Auto On/Off switch. You can't disable it in the Ubuntu package.
 
 Use an older Package.
-Manual Downgrade with sudo dpkg -i <package>
 
-libpcsclite1_1.5.3-1ubuntu4_arch.deb
-libpcsclite1_1.5.3-1ubuntu4_arch-dev.deb
-pcscd_1.5.3-1ubuntu4.2_arch.deb
+Manual Downgrade with sudo dpkg -i <package>
+---------------------------------------------
+- libpcsclite1_1.5.3-1ubuntu4_arch.deb
+- libpcsclite1_1.5.3-1ubuntu4_arch-dev.deb
+- pcscd_1.5.3-1ubuntu4.2_arch.deb
 
 Now the card should be alway online
 
