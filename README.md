@@ -60,6 +60,21 @@ $ ./build.linux/tvheadend
 
 Settings are stored in $HOME/.hts/tvheadend
 
+
+Using tvheadend
+===============
+
+Get Playlists by Tag, TagID, complete
+-------------------------------------
+
+$ wget http://<server IP>:9981/playlist/tag/Sky -O sky-channels.m3u
+
+$ wget http://<server IP>:9981/playlist/tagid/<ID> -O xyz-channels.m3u
+
+$ wget http://<server IP>:9981/playlist<ID> -O all-channels.m3u
+
+
+
 Further information
 ===================
 
