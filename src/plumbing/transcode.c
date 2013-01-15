@@ -378,6 +378,10 @@ transcoder_stream_audio(transcoder_stream_t *ts, th_pkt_t *pkt)
       ts->tctx->channels       = 2; // Only stereo suported
       ts->tctx->global_quality = 4*FF_QP2LAMBDA;
       break;
+     case SCT_AC3:
+      ts->tctx->codec_id       = CODEC_ID_AC3;
+      ts->tctx->channels       = 2;
+      break;
     default:
       ts->tctx->codec_id = CODEC_ID_NONE;
       break;
