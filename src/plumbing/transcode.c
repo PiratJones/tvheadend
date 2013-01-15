@@ -161,6 +161,9 @@ transcoder_get_codec_id(streaming_component_type_t type)
   case SCT_VORBIS:
     codec_id = CODEC_ID_VORBIS;
     break;
+  case SCT_AC3:
+    codec_id = CODEC_ID_AC3;
+    break;
   default:
     codec_id = CODEC_ID_NONE;
     break;
@@ -380,7 +383,7 @@ transcoder_stream_audio(transcoder_stream_t *ts, th_pkt_t *pkt)
       break;
      case SCT_AC3:
       ts->tctx->codec_id       = CODEC_ID_AC3;
-      ts->tctx->channels       = 2;
+      ts->tctx->channels       = 2; // CHange to only stereo output
       break;
     default:
       ts->tctx->codec_id = CODEC_ID_NONE;
